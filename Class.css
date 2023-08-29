@@ -1,0 +1,110 @@
+
+::-moz-selection{
+    background-color: transparent;
+    color: #000;
+}
+
+::selection{
+    background-color: transparent;
+    color: #000;
+}
+
+.Class{
+    display:grid;
+    grid-template-columns: 3fr 3fr;
+}
+
+.Quizzes{
+    transition:.2s all;
+    cursor: pointer;
+}
+
+.Picture_Quizzes, .Yes_No_Quizzes, .Sounds_Quizzes, .Trivia_Quizzes{
+    height: 100%;
+    position: relative;
+}
+
+.Picture_Quizzes h1, .Yes_No_Quizzes h1, .Sounds_Quizzes h1, .Trivia_Quizzes h1{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 40%;
+}
+
+.button{
+    display: none;
+}
+
+.Picture_Quizzes:hover .button, .Yes_No_Quizzes:hover .button, 
+.Sounds_Quizzes:hover .button, .Trivia_Quizzes:hover .button{
+    display: flex;
+    position: relative;
+    top: 20%;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.button2
+{
+    font-size: 20px;
+    font-family: 'Rocher';
+    font-palette: --orange;
+}
+.Class:hover .Quizzes{
+    filter: blur(3px);
+    opacity: .5;
+    transform: scale(.9);
+}
+
+.Class:hover .Quizzes:hover{
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+}
+
+.Picture_Quizzes{
+    font-family: 'Rocher';
+    font-palette: --blue;
+}
+
+.Yes_No_Quizzes{
+    font-family: 'Rocher';
+    font-palette: --green;
+}
+
+.Sounds_Quizzes{
+    font-family: 'Rocher';
+    font-palette: --Pink;
+}
+
+.Trivia_Quizzes{
+    font-family: 'Rocher';
+    font-palette: --orange;
+}
+
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+@font-palette-values --blue{
+    font-family: Rocher;
+    base-palette: 4;
+}
+
+@font-palette-values --green{
+    font-family: Rocher;
+    base-palette: 2;
+}
+
+@font-palette-values --Pink{
+    font-family: Rocher;
+    base-palette: 1;
+}
+
+@font-palette-values --orange{
+    font-family: Rocher;
+    base-palette: 6;
+}
