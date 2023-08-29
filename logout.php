@@ -17,6 +17,6 @@ if (ini_get("session.use_cookies")) {
 session_destroy();
 
 // Chuyển hướng người dùng về trang chính (Intro.php)
-header("Location: index.php");
+header("Location: index.html");
 exit();
 ?>
